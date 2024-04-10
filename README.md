@@ -5,6 +5,7 @@
 2. Verschieben sie den Zip Ordner in einen Ordner ihrer Wahl im Windowsexpolorer und entpacken sie diesen dort.
 3. Gehen sie in VS-Code und öffnen sie den Entpackten Ordner unter File --> Open Folder.
 4. Um ihre Pakete zu verwalten und keine Überschneidungen mit anderen Projekten zu generieren, erstellen sie eine Virtuelle Umgebung (virtual environment).
+   
    4.1. Öffnen Sie das Terminal in VS Code.
    
    4.2. Geben Sie **"python -m venv .venv"** ein.
