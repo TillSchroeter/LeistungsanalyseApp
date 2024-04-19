@@ -1,1 +1,3 @@
 # LeistungsanalyseApp
+von Till Schröter:
+
