@@ -20,11 +20,11 @@ class Subject (Person):
     def __init__ (self,first_name, last_name, sex, birth_date):
         super().__init__(first_name, last_name)
         self.sex = sex
-        self.birth_date = birth_date
+        self.__birth_date = birth_date
     
     def calculate_age (self):
             today = datetime.now()
-            date = datetime.strptime(self.birth_date, '%d.%m.%Y')
+            date = datetime.strptime(self.__birth_date, '%d.%m.%Y')
             delta = today - date
             age = delta.days / 365.25 #Berücksichtigung des Schaltjahres
             age_rounded = round (age, 3)
@@ -44,7 +44,7 @@ class Subject (Person):
     def return_Dict (self):
         self.__dict__ ["estimate_max_hr"] = self.estimate_max_hr()
         self.__dict__ ["age"] = self.calculate_age ()
-        del self.__dict__['birth_date']
+        del self.__dict__['_Subject__birth_date']
         return self.__dict__
 
 
@@ -56,12 +56,12 @@ class Supervisor (Person):
     def return_Dict (self):
         return self.__dict__
 
-'''Person1 = Subject ('Till', 'Schröter', 'male', '25.04.2003')
+'''Person1 = Subject ('Till', 'Schröter', 'male', '30.04.2003')
 print (Person1.estimate_max_hr())
 print (Person1.__dict__)
 Person1.safe ()
 print (Person1.return_Dict ())
-
+# pint (Person1.birth_date)
 Supervisor1 = Supervisor ('Hans', 'Jürgen')
 # print (Supervisor1)'''
 

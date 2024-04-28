@@ -1,1 +1,1 @@
-{"Person": {"first_name": "Till", "last_name": "Schroeter", "sex": "male", "estimate_max_hr": 204.111, "age": 20.988}, "Versuchsleiter": {"first_name": "Hans", "last_name": "Juergen"}, "Experiment": {"experiment_name": "Test", "date": "25.04.2024", "subject": "Fu\u00dfball"}}
+{"Person": {"first_name": "Till", "last_name": "Schroeter", "sex": "male", "estimate_max_hr": 204.103, "age": 20.997}, "Versuchsleiter": {"first_name": "Till", "last_name": "Schroeter"}, "Experiment": {"experiment_name": "Sporttest", "date": "28.04.2024", "subject": "Fu\u00dfball"}}
